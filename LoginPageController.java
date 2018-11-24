@@ -16,7 +16,6 @@ import objects.User;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,28 +26,63 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 
 import javafx.scene.control.Label;
-
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.SplitMenuButton;
 
 public class LoginPageController implements Initializable {
-	@FXML
-	private PasswordField pb;
-	@FXML
-	private TextField username;
-	@FXML
-	private Button loginButton;
-	@FXML
-	private Label label;
-	@FXML
-	private Button SignUpButton;
-	@FXML
-	private TextField NewName;
-	@FXML
-	private PasswordField NewUserPassword;
-	@FXML
-	private TextField NewUserName;
-	@FXML
-	private Label RegistrationErrorLabel;
+
+	
+	@FXML // ResourceBundle that was given to the FXMLLoader
+    private ResourceBundle resources;
+
+    @FXML // URL location of the FXML file that was given to the FXMLLoader
+    private URL location;
+
+    @FXML // fx:id="AdminAccountOption"
+    private MenuItem AdminAccountOption; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserName31"
+    private TextField NewUserName31; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserName3"
+    private TextField NewUserName3; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserName2"
+    private TextField NewUserName2; // Value injected by FXMLLoader
+
+    @FXML // fx:id="label"
+    private Label label; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserName1"
+    private TextField NewUserName1; // Value injected by FXMLLoader
+
+    @FXML // fx:id="pb"
+    private PasswordField pb; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserPassword1"
+    private PasswordField NewUserPassword1; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserPassword"
+    private PasswordField NewUserPassword; // Value injected by FXMLLoader
+
+    @FXML // fx:id="AccountTypeMenuButton"
+    private SplitMenuButton AccountTypeMenuButton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="SignUpButton"
+    private Button SignUpButton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="RegistrationErrorLabel"
+    private Label RegistrationErrorLabel; // Value injected by FXMLLoader
+
+    @FXML // fx:id="loginButton"
+    private Button loginButton; // Value injected by FXMLLoader
+
+    @FXML // fx:id="NewUserName"
+    private TextField NewUserName; // Value injected by FXMLLoader
+
+    @FXML // fx:id="username"
+    private TextField username; // Value injected by FXMLLoader 
 	
 	private static HashMap<String,String> AccountList = new HashMap<String,String>();
 
@@ -74,7 +108,7 @@ public class LoginPageController implements Initializable {
 			label.setText("Your password has been confirmed");
 			label.setTextFill(Color.rgb(21, 117, 84));
 			pb.clear();
-			Parent homescreen = FXMLLoader.load(getClass().getResource("AfterLogInPage.fxml"));
+			Parent homescreen = FXMLLoader.load(getClass().getResource("/application/AfterLogInPage.fxml"));
 			Scene loginScene = new Scene(homescreen);
 			Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 			window.setScene(loginScene);
@@ -153,6 +187,21 @@ public class LoginPageController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
+//		assert AdminAccountOption != null : "fx:id=\"AdminAccountOption\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserName31 != null : "fx:id=\"NewUserName31\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserName3 != null : "fx:id=\"NewUserName3\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserName2 != null : "fx:id=\"NewUserName2\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert label != null : "fx:id=\"label\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserName1 != null : "fx:id=\"NewUserName1\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert pb != null : "fx:id=\"pb\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserPassword1 != null : "fx:id=\"NewUserPassword1\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserPassword != null : "fx:id=\"NewUserPassword\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert AccountTypeMenuButton != null : "fx:id=\"AccountTypeMenuButton\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert SignUpButton != null : "fx:id=\"SignUpButton\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert RegistrationErrorLabel != null : "fx:id=\"RegistrationErrorLabel\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert loginButton != null : "fx:id=\"loginButton\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert NewUserName != null : "fx:id=\"NewUserName\" was not injected: check your FXML file 'LoginPage.fxml'.";
+//        assert username != null : "fx:id=\"username\" was not injected: check your FXML file 'LoginPage.fxml'.";
 	
 	}
 

@@ -20,6 +20,14 @@ public class HomePageController implements Initializable {
 	   @FXML
 	   private Button loginButton;
 	   
+	   @FXML
+	   private Button findRestaurantsButton;
+	   
+	   @FXML
+	   private Button dataButton;
+	   
+	   @FXML
+	   private Button writeAReviewButton;
 	   
 	   // When user click on loginButton
 	   // this method will be called.
@@ -33,8 +41,27 @@ public class HomePageController implements Initializable {
 		   window.show();
 		   
 		   }
-
-
+	   
+	   public void goToResultsPage(ActionEvent event) throws IOException {
+		   System.out.println("find restaurants button click");
+		   Parent parent = FXMLLoader.load(getClass().getResource("AfterLoginPage.fxml"));
+		   Scene resultsScene = new Scene(parent);
+		   
+		   Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		   window.setScene(resultsScene);
+		   window.show();
+		   
+	   }
+	   
+	   public void goToWriteAReviewPage(ActionEvent event) throws IOException {
+		   System.out.println("Write a Review button click");
+		   Parent parent = FXMLLoader.load(getClass().getResource("ReviewEditorPage.fxml"));
+		   Scene reviewEditorScene = new Scene(parent);
+		   
+		   Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		   window.setScene(reviewEditorScene);
+		   window.show(); 
+	   }
 
 @Override
 public void initialize(URL location, ResourceBundle resources) {

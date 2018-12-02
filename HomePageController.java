@@ -29,6 +29,8 @@ public class HomePageController implements Initializable {
 	   @FXML
 	   private Button writeAReviewButton;
 	   
+	   private Button SearchButton;
+	   
 	   // When user click on loginButton
 	   // this method will be called.
 	   public void goToLoginScreen(ActionEvent event) throws IOException {
@@ -61,6 +63,15 @@ public class HomePageController implements Initializable {
 		   Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		   window.setScene(reviewEditorScene);
 		   window.show(); 
+	   }
+	   
+	   public void goToSearchRestaurant(ActionEvent event) throws IOException {
+		   Parent parent = FXMLLoader.load(getClass().getResource("put something here"));
+		   Scene SearchedRestaurantScene = new Scene(parent);
+		   
+		   Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+		   window.setScene(SearchedRestaurantScene);
+		   window.show();
 	   }
 
 @Override

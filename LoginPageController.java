@@ -42,30 +42,31 @@ public class LoginPageController implements Initializable {
     @FXML // fx:id="AdminAccountOption"
     private MenuItem AdminAccountOption; // Value injected by FXMLLoader
     
+    @FXML
     private TextField username;
-    
+    @FXML
     private Button loginButton;
-    
+    @FXML
     private Label userPassError;
-    
+    @FXML
     private PasswordField pb;
-    
+    @FXML
     private PasswordField NewUserPassword;
-    
+    @FXML
     private TextField NewUserFirstName;
-    
+    @FXML
     private TextField NewUserLastName;
-    
+    @FXML
     private TextField NewUserName;
-    
+    @FXML
     private TextField NewUserStreetAddress;
-    
+    @FXML
     private TextField NewUserCity;
-    
+    @FXML
     private TextField NewUserState;
-    
+    @FXML
     private Button signUpButton;
-    
+    @FXML
     private Label RegisterErrorLabel;
 
     @FXML // fx:id="AccountTypeMenuButton"

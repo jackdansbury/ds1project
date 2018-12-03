@@ -28,7 +28,7 @@ public class HomePageController implements Initializable {
 	   
 	   @FXML
 	   private Button writeAReviewButton;
-	   
+	   @FXML
 	   private Button SearchButton;
 	   
 	   // When user click on loginButton

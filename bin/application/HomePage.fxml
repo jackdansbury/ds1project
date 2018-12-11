@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="1373.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <children>
+      <AnchorPane layoutY="-8.0" prefHeight="1080.0" prefWidth="1373.0" style="-fx-border-style: circle;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-8.0">
+         <children>
+            <Button fx:id="findRestaurantsButton" alignment="CENTER" cancelButton="true" layoutX="14.0" layoutY="217.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#goToResultsPage" prefHeight="318.0" prefWidth="493.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Find A Restaurant For You">
+               <font>
+                  <Font name="Magic R" size="35.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </Button>
+            <Button fx:id="writeAReviewButton" layoutX="14.0" layoutY="547.0" mnemonicParsing="false" onAction="#goToWriteAReviewPage" prefHeight="249.0" prefWidth="493.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Write a Review" textAlignment="CENTER">
+               <font>
+                  <Font name="Magic R" size="58.0" />
+               </font>
+            </Button>
+            <Label layoutX="612.0" layoutY="236.0" prefHeight="57.0" prefWidth="201.0" style="-fx-background-color: whit;" text="Search For Somewhere Specific:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField layoutX="813.0" layoutY="252.0" prefHeight="25.0" prefWidth="264.0" promptText="Search by Name" />
+            <Button fx:id="SearchButton" layoutX="1089.0" layoutY="252.0" mnemonicParsing="false" onAction="#goToSearchRestaurant" style="-fx-background-color: silver;" text="Go!">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="608.0" layoutY="290.0" prefHeight="149.0" prefWidth="518.0" text="Our Current Favorite" textFill="#e8930c">
+               <font>
+                  <Font name="Impact" size="61.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="630.0" layoutY="468.0" prefHeight="318.0" prefWidth="478.0" text="Burger King">
+               <font>
+                  <Font name="System Bold" size="83.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" stroke="BLACK" strokeType="INSIDE" width="1373.0" />
+      <Label layoutX="217.0" layoutY="5.0" prefHeight="194.0" prefWidth="237.0" text="RA">
+         <font>
+            <Font name="Arial Black" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" alignment="BOTTOM_CENTER" layoutX="1097.0" layoutY="90.0" mnemonicParsing="false" onAction="#goToLoginScreen" prefHeight="105.0" prefWidth="213.0" style="-fx-background-color: dodgerblur;" text="Login / Sign Up">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

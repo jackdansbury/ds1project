@@ -4,22 +4,28 @@ import java.util.ArrayList;
 
 public class Restaurant {
 	
-	private String name, address, city, state, hours, typeOfMeal;
+	private String name, address, city, state, mondayHours, tuesdayHours, wednesdayHours, thursdayHours, fridayHours, saturdayHours, sundayHours, typeOfMeal;
 	
 	
 	private ArrayList<Review> reviewsList = new ArrayList<Review>();
 
 
 	
-	public Restaurant(String name, String address, String city, String state, String hours, String typeOfMeal) 
+	public Restaurant(String name, String city, String state, String address, String mondayHours, String tuesdayHours, String wednesdayHours, String thursdayHours, String fridayHours, String saturdayHours, String sundayHours, String typeOfMeal) 
 	{
 		super();
 		this.name = name;
-		this.address = address;
 		this.city = city;
 		this.state = state;
-		this.hours = hours;
-		this.setTypeOfMeal(typeOfMeal);
+		this.address = address;
+		this.mondayHours = mHours;
+		this.tuesdayHours = tuHours;
+		this.wednesdayHours = wHours;
+		this.thursdayHours = thHours;
+		this.fridayHours = fHours;
+		this.saturdayHours = saHours;
+		this.sundayHours = suHours;
+		this.setTypeOfMeal = typeOfMeal;
 	}
 	
 	
@@ -92,13 +98,61 @@ public class Restaurant {
 		this.state = state;
 	}
 	
-	public String getHours() {
-		return hours;
+	public String getMondayHours() {
+		return mondayHours;
+	}
+
+	public void setMondayHours(String mHours) {
+		this.mondayHours = mHours;
+	}
+	
+	public String getTuesdayHours() {
+		return tuesdayHours;
+	}
+
+	public void setTuesdayHours(String tuHours) {
+		this.tuesdayHours = tuHours;
+	}
+	
+	public String getWednesdayHours() {
+		return wednesdayHours;
+	}
+
+	public void setWednesdayHours(String wHours) {
+		this.wednesdayHours = wHours;
+	}
+	
+	public String getThursdayHours() {
+		return thursdayHours;
+	}
+
+	public void setThursdayHours(String thHours) {
+		this.thurdayHours = thHours;
+	}
+	
+	public String getFridayHours() {
+		return fridayHours;
+	}
+
+	public void setFridayHours(String fHours) {
+		this.FridayHours = fHours;
+	}
+	
+	public String getSaturdayHours() {
+		return saturdayHours;
+	}
+
+	public void setSaturdayHours(String saHours) {
+		this.saturdayHours = saHours;
+	}
+	
+	public String getSundayHours() {
+		return sundayHours;
 	}
 
 
-	public void setHours(String hours) {
-		this.hours = hours;
+	public void setSundayHours(String suHours) {
+		this.sundayHours = suHours;
 	}
 
 }

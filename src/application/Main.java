@@ -24,6 +24,8 @@ public class Main extends Application {
 
 			primaryStage.setTitle("Home Screen");
 
+			
+			// DICKFACE
 			primaryStage.setScene(scene);
 
 			primaryStage.show();
